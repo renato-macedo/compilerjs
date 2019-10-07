@@ -1,4 +1,4 @@
-const Tokens = [
+const Lexems = [
   {
     pattern: /while/,
     class: 'while'
@@ -16,11 +16,11 @@ const Tokens = [
     class: 'fecha_parentese'
   },
   {
-    pattern: /{/,
+    pattern: /^{/,
     class: 'abre_chave'
   },
   {
-    pattern: /}/,
+    pattern: /^}/,
     class: 'fecha_chave'
   },
   {
@@ -28,11 +28,12 @@ const Tokens = [
     class: 'number'
   },
   {
-    pattern: /int|float|string|boolean|void/,
+    pattern: /int\s+$|float\s+$|string\s+$|boolean\s+$|void\s+$/,
     class: 'type'
   },
   {
-    pattern: /^\$[a-zA-Z](\w*)([0-9]*)/,
+    //pattern: /^\$[a-zA-Z]+\s$/,
+    pattern: /^[a-zA-Z_$][a-zA-Z_$0-9]*$/,
     class: 'Id'
   },
 
@@ -66,4 +67,4 @@ const Tokens = [
   }
 ];
 
-module.exports = Tokens;
+module.exports = Lexems;

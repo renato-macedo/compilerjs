@@ -1,5 +1,9 @@
 string $s = "asa asas"
 3;
-int $a = 3;
+int $inta = 3;
 int $b = 2;
 int $c = $a + $b;
+
+fn $aas3s () {
+
+}

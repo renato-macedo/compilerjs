@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const tokens = require('./tokens');
+const tokens = require('./lexems');
 
 const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'));
 const inputString = input.toString();
@@ -9,7 +9,7 @@ let currentPosition = 0;
 console.log(inputString.length);
 let programTokens = [];
 let valueAccumulator = '';
-
+let numsei = [];
 foundToken = false;
 while (currentPosition < inputString.length) {
   let currentChar = inputString[currentPosition];
@@ -35,3 +35,4 @@ while (currentPosition < inputString.length) {
 }
 
 console.log(programTokens);
+console.log(numsei);
