@@ -1,7 +1,7 @@
 const Lexems = [
   {
     pattern: /while/,
-    class: 'while'
+    class: '^while'
   },
   {
     pattern: /fn/,
@@ -28,12 +28,12 @@ const Lexems = [
     class: 'number'
   },
   {
-    pattern: /int\s+$|float\s+$|string\s+$|boolean\s+$|void\s+$/,
+    pattern: /^int$|^float$|^string$|^boolean$|^void$/,
     class: 'type'
   },
   {
     //pattern: /^\$[a-zA-Z]+\s$/,
-    pattern: /^[a-zA-Z_$][a-zA-Z_$0-9]*$/,
+    pattern: /^\$[a-zA-Z_$][a-zA-Z_$0-9]*$/,
     class: 'Id'
   },
 
