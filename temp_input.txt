@@ -1,0 +1,9 @@
+= 3;
+string $s = "a"
+3;
+int $nasa = 3;
+int $b = 2;
+int $c = $a + $b + $d;
+
+fn $aas3s() {
+}

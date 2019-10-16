@@ -36,12 +36,6 @@ const Lexems = [
     class: 'true-false'
   },
   {
-    //pattern: /^\$[a-zA-Z]+\s$/,
-    pattern: /^\$[_a-zA-Z]\w*/,
-    class: 'Id'
-  },
-
-  {
     pattern: /^=/,
     class: 'assignment'
   },
@@ -73,6 +67,11 @@ const Lexems = [
   {
     pattern: /^return/,
     class: 'return'
+  },
+  {
+    //pattern: /^\$[a-zA-Z]+\s$/,
+    pattern: /^\$[_a-zA-Z]\w*/,
+    class: 'Id'
   }
 ];
 

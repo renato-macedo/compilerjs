@@ -1,9 +1,5 @@
-int $inta= 3;
-string $s = "asa asas"
-3;
-int $nasa = 3;
-int $b = 2;
-int $c = $a + $b + $d;
+int $inta;
 
-fn $aas3s () {
+fn $aas3s() {
+  int $aa;
 }
