@@ -51,6 +51,14 @@ function Parser(tokens) {
     }
     return currentToken;
   }
+  function consumeUntilNotBe(expected_type) {
+    let currentToken = tokens.shift();
+    while (currentToken.class === expected_type) {
+      currentToken = tokens.shift();
+      console.log('AA', currentToken.class);
+    }
+    return currentToken;
+  }
 
   function parseExp() {
     let expr;
@@ -61,7 +69,7 @@ function Parser(tokens) {
         expr = parseType();
         break;
       case 'Id':
-        expr = parseId();
+        expr = parseVar();
         break;
       case 'if':
         parseIf();
@@ -106,38 +114,60 @@ function Parser(tokens) {
 
   function parseType() {
     const type = consume('type').value;
-    const id = consumeUntil('Id').value;
+    //const id = consumeUntil('Id').value;
+    //consumeUntilNotBe('whitespace')
+    let next = seeNext()
+    while(next != 'Id') {
+      consume()
+      next = seeNext()
+    }
+    //tokens[0]
+   
     const Node = {
       name: 'VariableDeclaration',
       type: type,
-      value: id
+      value: tokens[0].value
     };
+    
     return Node;
   }
   function parseVar() {
-    const currentToken = consume('Id');
-    const next = seeNext();
-    switch (next) {
+    let node;
+    
+    //const currentToken = consume('Id')
+    const currentToken = consumeUntil('Id');
+    //const next = seeNext();
+    //consumeUntil('Id')
+    const next = seeNext()
+    console.log(next)
+
+    while(next !== 'end' && next !== 'assigment') {
+      consume()
+    }
+    switch ('aa',next) {
       case 'end':
+        consume('end')
+        node = currentToken
         break;
       case 'assignment':
+        consume('assignment')
+        let expr = parseExp()
+        node = {
+          name: 'Assignment',
+          value: expr
+        }
         break;
-      case 'parentese':
-        break;
-
-      default:
-        break;
+      // case 'parentese':
+      //   consume()
+      //   break;
+      // default:
+      //   consume()
+      //   break;
     }
     // const Node = {
     //   type: 'VariableDeclaration'
     // };
-    switch (key) {
-      case value:
-        break;
-
-      default:
-        break;
-    }
+    return node
   }
   function parseIf() {
     const currentToken = consume('if');

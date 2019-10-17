@@ -1,5 +1,5 @@
 int $idade;
 
 fn $soma(int $a, int $b) {
-  int $id;
+  int $id = 1;
 }
