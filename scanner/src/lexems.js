@@ -7,21 +7,29 @@ const Lexems = [
     pattern: /^fn/,
     class: 'funcao'
   },
+  // {
+  //   pattern: /^\(/,
+  //   class: 'abre_parentese'
+  // },
+  // {
+  //   pattern: /^\)/,
+  //   class: 'fecha_parentese'
+  // },
   {
-    pattern: /^\(/,
-    class: 'abre_parentese'
+    pattern: /^\)|\(/,
+    class: 'parentese'
   },
+  // {
+  //   pattern: /^{/,
+  //   class: 'abre_chave'
+  // },
+  // {
+  //   pattern: /^}/,
+  //   class: 'fecha_chave'
+  // },
   {
-    pattern: /^\)/,
-    class: 'fecha_parentese'
-  },
-  {
-    pattern: /^{/,
-    class: 'abre_chave'
-  },
-  {
-    pattern: /^}/,
-    class: 'fecha_chave'
+    pattern: /^}|{/,
+    class: 'chave'
   },
   {
     pattern: /^\d*\.?\d+/,
@@ -67,6 +75,18 @@ const Lexems = [
   {
     pattern: /^return/,
     class: 'return'
+  },
+  {
+    pattern: /^,/,
+    class: 'comma'
+  },
+  {
+    pattern: /^if/,
+    class: 'if'
+  },
+  {
+    pattern: /^else/,
+    class: 'else'
   },
   {
     //pattern: /^\$[a-zA-Z]+\s$/,

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const options = require('commander');
 
-module.exports = function () {
+module.exports = function() {
   try {
     // options
     //   .version('0.0.1')
@@ -12,7 +12,9 @@ module.exports = function () {
     //   )
     //   .parse(process.argv);
     const lexems = require('./lexems');
-    const input = fs.readFileSync(path.resolve(__dirname, '..', '..', 'input.txt'));
+    const input = fs.readFileSync(
+      path.resolve(__dirname, '..', '..', 'input.txt')
+    );
 
     const inputString = input.toString();
     let currentPosition = 0;
@@ -36,6 +38,9 @@ module.exports = function () {
           if (lexem.class === 'number' && previousClass === 'Id') {
             programTokens[programTokens.length - 1].value += currentChar;
             previousClass = 'Id';
+          } else if (lexem.class === 'number' && previousClass === 'number') {
+            programTokens[programTokens.length - 1].value += currentChar;
+            previousClass = 'number';
           } else {
             programTokens.push({ class: lexem.class, value: valueAccumulator });
             previousClass = lexem.class;
@@ -52,10 +57,9 @@ module.exports = function () {
       currentPosition++;
     }
 
-    fs.writeFileSync('output.json', JSON.stringify(programTokens));
+    fs.writeFileSync('output.json', JSON.stringify(programTokens, null, 2));
     console.log(programTokens);
   } catch (error) {
     console.log(error.message);
   }
-
-}
+};

@@ -1,0 +1,108 @@
+[
+  {
+    "type": "VariableDeclaration",
+    "body": [
+      {
+        "class": "Id",
+        "value": "$idade"
+      }
+    ]
+  },
+  {
+    "type": "FunctionDeclaration",
+    "body": [
+      {
+        "class": "Id",
+        "value": "$soma"
+      },
+      {
+        "type": "Params",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "body": [
+              {
+                "class": "whitespace",
+                "value": " "
+              },
+              {
+                "class": "Id",
+                "value": "$a"
+              }
+            ]
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "type": "VariableDeclaration",
+            "body": [
+              {
+                "class": "whitespace",
+                "value": " "
+              },
+              {
+                "class": "Id",
+                "value": "$b"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Escopo",
+        "body": [
+          {
+            "class": "whitespace",
+            "value": "\n"
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "class": "return",
+            "value": "return"
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "class": "Id",
+            "value": "$a"
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "class": "op_mat",
+            "value": "+"
+          },
+          {
+            "class": "whitespace",
+            "value": " "
+          },
+          {
+            "class": "Id",
+            "value": "$b"
+          },
+          {
+            "class": "end",
+            "value": ";"
+          },
+          {
+            "class": "whitespace",
+            "value": "\n"
+          }
+        ]
+      }
+    ]
+  }
+]

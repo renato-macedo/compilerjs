@@ -1,5 +1,5 @@
-int $inta;
+int $idade;
 
-fn $aas3s() {
-  int $aa;
+fn $soma(int $a, int $b) {
+  int $id;
 }
