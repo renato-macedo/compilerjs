@@ -1,5 +1,39 @@
-int $idade;
+int $author;
+$author = "Lara Mora";
 
-fn $soma(int $a, int $b) {
-  int $id;
+print($author);
+
+int $start;
+int $end;
+$start = 0;
+$end = 10;
+
+if($start == $end){
+
+	print($start);
+
+} else if($start < $end) {
+
+	int $cursor;
+  $cursor = $start;
+
+	while ($cursor < $end) {
+		print($cursor);
+		$cursor = $cursor + 1;
+	}
+
+	print($cursor);
+
+} else {
+
+	int $cursor;
+  $cursor = $end;
+
+	while ($cursor > $start) {
+		print($cursor);
+		$cursor = $cursor - 1;
+	}
+
+	print($cursor);
+
 }
