@@ -88,10 +88,10 @@ const Lexems = [
     pattern: /^else/,
     class: 'else'
   },
-  {
-    pattern: /^print/,
-    class: 'print'
-  },
+  // {
+  //   pattern: /^print/,
+  //   class: 'print'
+  // },
 
   {
     //pattern: /^\$[a-zA-Z]+\s$/,

@@ -15,7 +15,7 @@ const productions = parser(
   tokens.filter(token => token.class !== 'whitespace').map(token => token.class)
 );
 console.log(productions);
-fs.writeFileSync('parser_output.txt', JSON.stringify(tokens, null, 2));
+fs.writeFileSync('parser_output.txt', JSON.stringify(productions, null, 2));
 
 /* int $idade;
 

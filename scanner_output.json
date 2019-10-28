@@ -1,51 +1,15 @@
 [
   {
-    "class": "type",
-    "value": "int"
+    "class": "fn",
+    "value": "fn"
   },
   {
     "class": "Id",
-    "value": "$author"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "Id",
-    "value": "$author"
-  },
-  {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "string",
-    "value": "\"Lara Mora\""
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "print",
-    "value": "print"
+    "value": "$soma"
   },
   {
     "class": "(",
     "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$author"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "end",
-    "value": ";"
   },
   {
     "class": "type",
@@ -53,11 +17,11 @@
   },
   {
     "class": "Id",
-    "value": "$start"
+    "value": "$a"
   },
   {
-    "class": "end",
-    "value": ";"
+    "class": "comma",
+    "value": ","
   },
   {
     "class": "type",
@@ -65,119 +29,7 @@
   },
   {
     "class": "Id",
-    "value": "$end"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "number",
-    "value": "0"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "Id",
-    "value": "$end"
-  },
-  {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "number",
-    "value": "10"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "if",
-    "value": "if"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": "comparadores",
-    "value": "=="
-  },
-  {
-    "class": "Id",
-    "value": "$end"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "{",
-    "value": "{"
-  },
-  {
-    "class": "print",
-    "value": "print"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "}",
-    "value": "}"
-  },
-  {
-    "class": "else",
-    "value": "else"
-  },
-  {
-    "class": "if",
-    "value": "if"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": "comparadores",
-    "value": "<"
-  },
-  {
-    "class": "Id",
-    "value": "$end"
+    "value": "$b"
   },
   {
     "class": ")",
@@ -193,7 +45,11 @@
   },
   {
     "class": "Id",
-    "value": "$cursor"
+    "value": "$c"
+  },
+  {
+    "class": "assignment",
+    "value": "="
   },
   {
     "class": "end",
@@ -201,7 +57,7 @@
   },
   {
     "class": "Id",
-    "value": "$cursor"
+    "value": "$c"
   },
   {
     "class": "assignment",
@@ -209,103 +65,27 @@
   },
   {
     "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "while",
-    "value": "while"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": "comparadores",
-    "value": "<"
-  },
-  {
-    "class": "Id",
-    "value": "$end"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "{",
-    "value": "{"
-  },
-  {
-    "class": "print",
-    "value": "print"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
+    "value": "$a"
   },
   {
     "class": "op_mat",
     "value": "+"
   },
   {
-    "class": "number",
-    "value": "1"
+    "class": "Id",
+    "value": "$b"
   },
   {
     "class": "end",
     "value": ";"
   },
   {
-    "class": "}",
-    "value": "}"
-  },
-  {
-    "class": "print",
-    "value": "print"
-  },
-  {
-    "class": "(",
-    "value": "("
+    "class": "return",
+    "value": "return"
   },
   {
     "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": ")",
-    "value": ")"
+    "value": "$c"
   },
   {
     "class": "end",
@@ -314,14 +94,6 @@
   {
     "class": "}",
     "value": "}"
-  },
-  {
-    "class": "else",
-    "value": "else"
-  },
-  {
-    "class": "{",
-    "value": "{"
   },
   {
     "class": "type",
@@ -329,7 +101,7 @@
   },
   {
     "class": "Id",
-    "value": "$cursor"
+    "value": "$idade"
   },
   {
     "class": "end",
@@ -337,118 +109,18 @@
   },
   {
     "class": "Id",
-    "value": "$cursor"
+    "value": "$idade"
   },
   {
     "class": "assignment",
     "value": "="
-  },
-  {
-    "class": "Id",
-    "value": "$end"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "while",
-    "value": "while"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": "comparadores",
-    "value": ">"
-  },
-  {
-    "class": "Id",
-    "value": "$start"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "{",
-    "value": "{"
-  },
-  {
-    "class": "print",
-    "value": "print"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": "op_mat",
-    "value": "-"
   },
   {
     "class": "number",
-    "value": "1"
+    "value": "13"
   },
   {
     "class": "end",
     "value": ";"
-  },
-  {
-    "class": "}",
-    "value": "}"
-  },
-  {
-    "class": "print",
-    "value": "print"
-  },
-  {
-    "class": "(",
-    "value": "("
-  },
-  {
-    "class": "Id",
-    "value": "$cursor"
-  },
-  {
-    "class": ")",
-    "value": ")"
-  },
-  {
-    "class": "end",
-    "value": ";"
-  },
-  {
-    "class": "}",
-    "value": "}"
   }
 ]
