@@ -4,7 +4,7 @@
     "value": "fn"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$soma"
   },
   {
@@ -16,7 +16,7 @@
     "value": "int"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$a"
   },
   {
@@ -28,7 +28,7 @@
     "value": "int"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$b"
   },
   {
@@ -44,27 +44,23 @@
     "value": "int"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$c"
   },
   {
-    "class": "assignment",
-    "value": "="
-  },
-  {
-    "class": "end",
+    "class": ";",
     "value": ";"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$c"
   },
   {
-    "class": "assignment",
+    "class": "=",
     "value": "="
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$a"
   },
   {
@@ -72,11 +68,11 @@
     "value": "+"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$b"
   },
   {
-    "class": "end",
+    "class": ";",
     "value": ";"
   },
   {
@@ -84,11 +80,11 @@
     "value": "return"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$c"
   },
   {
-    "class": "end",
+    "class": ";",
     "value": ";"
   },
   {
@@ -100,19 +96,19 @@
     "value": "int"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$idade"
   },
   {
-    "class": "end",
+    "class": ";",
     "value": ";"
   },
   {
-    "class": "Id",
+    "class": "id",
     "value": "$idade"
   },
   {
-    "class": "assignment",
+    "class": "=",
     "value": "="
   },
   {
@@ -120,7 +116,7 @@
     "value": "13"
   },
   {
-    "class": "end",
+    "class": ";",
     "value": ";"
   }
 ]

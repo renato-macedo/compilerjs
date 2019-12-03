@@ -45,11 +45,11 @@ const Lexems = [
   },
   {
     pattern: /^=/,
-    class: 'assignment'
+    class: '='
   },
   {
     pattern: /^;/,
-    class: 'end'
+    class: ';'
   },
   {
     pattern: /^\s$/,
@@ -96,7 +96,7 @@ const Lexems = [
   {
     //pattern: /^\$[a-zA-Z]+\s$/,
     pattern: /^\$[_a-zA-Z]\w*/,
-    class: 'Id'
+    class: 'id'
   }
 ];
 

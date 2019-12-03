@@ -19,9 +19,9 @@ module.exports = function(input) {
       let pattern = lexem.pattern;
       if (pattern.test(valueAccumulator)) {
         // console.log(valueAccumulator);
-        if (lexem.class === 'number' && previousClass === 'Id') {
+        if (lexem.class === 'number' && previousClass === 'id') {
           programTokens[programTokens.length - 1].value += currentChar;
-          previousClass = 'Id';
+          previousClass = 'id';
         } else if (lexem.class === 'number' && previousClass === 'number') {
           programTokens[programTokens.length - 1].value += currentChar;
           previousClass = 'number';
@@ -39,7 +39,7 @@ module.exports = function(input) {
         break;
       }
     }
-    if (!foundToken && previousClass === 'Id') {
+    if (!foundToken && previousClass === 'id') {
       programTokens[programTokens.length - 1].value += currentChar;
       foundToken = true;
     }

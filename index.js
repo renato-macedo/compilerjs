@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-//const options = require('commander');
+
 const scanner = require('./scanner');
 const parser = require('./parser');
 
@@ -11,21 +11,13 @@ const tokens = scanner(input.toString());
 fs.writeFileSync('scanner_output.json', JSON.stringify(tokens, null, 2));
 console.log(tokens);
 
-const productions = parser(
-  tokens.filter(token => token.class !== 'whitespace').map(token => token.class)
-);
-console.log(productions);
-fs.writeFileSync('parser_output.txt', JSON.stringify(productions, null, 2));
+// const productions = parser(
+//   tokens.filter(token => token.class !== 'whitespace').map(token => token.class)
+// );
+const productions = parser(tokens);
 
-/* int $idade;
-
-$idade = 13;
-
-fn $soma(int $a, int $b) {
-  return $a + $b;
-}
-
-while ($idade < 18) {
-  $idade = $soma($idade, 2);
-}
- */
+fs.writeFile('parser_output.txt', JSON.stringify(productions, null, 2), err => {
+  if (err) {
+    console.log(err);
+  }
+});
