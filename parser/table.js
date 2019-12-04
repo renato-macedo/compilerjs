@@ -14,12 +14,11 @@ module.exports = {
     id: ['C'],
     print: ['C'],
     fn: ['C'],
-    '}': ['ɛ'],
     return: ['C2'],
     $: ['ɛ']
   },
   C2: {
-    return: ['return', 'Y1', ';', '}']
+    return: ['return', 'Y1', ';']
   },
   K: {
     id: ['id', 'A1']

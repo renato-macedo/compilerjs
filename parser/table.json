@@ -1,0 +1,758 @@
+{
+  "C": {
+    "type": [
+      {
+        "value": "D",
+        "exp": true
+      },
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "id": [
+      {
+        "value": "K",
+        "exp": true
+      },
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "if": [
+      {
+        "value": "T",
+        "exp": true
+      },
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "while": [
+      {
+        "value": "R",
+        "exp": true
+      },
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "fn": [
+      {
+        "value": "Z",
+        "exp": true
+      },
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "C1": {
+    "type": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "if": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "while": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "id": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "print": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "fn": [
+      {
+        "value": "C",
+        "exp": true
+      }
+    ],
+    "}": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "return": [
+      {
+        "value": "C2",
+        "exp": true
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "C2": {
+    "return": [
+      {
+        "value": "return",
+        "exp": false
+      },
+      {
+        "value": "Y1",
+        "exp": true
+      },
+      {
+        "value": ";",
+        "exp": false
+      },
+      {
+        "value": "}",
+        "exp": false
+      }
+    ]
+  },
+  "K": {
+    "id": [
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "A1",
+        "exp": true
+      }
+    ]
+  },
+  "A1": {
+    "=": [
+      {
+        "value": "=",
+        "exp": false
+      },
+      {
+        "value": "O",
+        "exp": true
+      }
+    ]
+  },
+  "F1": {
+    "(": [
+      {
+        "value": "(",
+        "exp": false
+      },
+      {
+        "value": "X",
+        "exp": true
+      },
+      {
+        "value": ")",
+        "exp": false
+      }
+    ]
+  },
+  "D": {
+    "type": [
+      {
+        "value": "type",
+        "exp": false
+      },
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": ";",
+        "exp": false
+      }
+    ]
+  },
+  "A": {
+    "id": [
+      {
+        "value": "A1",
+        "exp": true
+      }
+    ]
+  },
+  "I": {
+    "if": [
+      {
+        "value": "(",
+        "exp": false
+      },
+      {
+        "value": "Y",
+        "exp": true
+      },
+      {
+        "value": ")",
+        "exp": false
+      },
+      {
+        "value": "{",
+        "exp": false
+      },
+      {
+        "value": "C",
+        "exp": true
+      },
+      {
+        "value": "}",
+        "exp": false
+      },
+      {
+        "value": "I1",
+        "exp": true
+      }
+    ]
+  },
+  "I1": {
+    "else": [
+      {
+        "value": "{",
+        "exp": false
+      },
+      {
+        "value": "C",
+        "exp": true
+      },
+      {
+        "value": "}",
+        "exp": false
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "Y": {
+    "id": [
+      {
+        "value": "Y1",
+        "exp": true
+      },
+      {
+        "value": "B",
+        "exp": true
+      }
+    ],
+    "number": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "string": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "B": {
+    "W": [
+      {
+        "value": "Y1",
+        "exp": true
+      }
+    ],
+    "L": [
+      {
+        "value": "Y1",
+        "exp": true
+      }
+    ]
+  },
+  "Y1": {
+    "id": [
+      {
+        "value": "id",
+        "exp": false
+      }
+    ],
+    "number": [
+      {
+        "value": "number",
+        "exp": false
+      }
+    ],
+    "string": [
+      {
+        "value": "string",
+        "exp": false
+      }
+    ]
+  },
+  "R": {
+    "for": [
+      {
+        "value": "for",
+        "exp": false
+      },
+      {
+        "value": "(",
+        "exp": false
+      },
+      {
+        "value": "A",
+        "exp": true
+      },
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "W",
+        "exp": true
+      },
+      {
+        "value": "O",
+        "exp": true
+      },
+      {
+        "value": ";",
+        "exp": false
+      },
+      {
+        "value": "A",
+        "exp": true
+      },
+      {
+        "value": "{",
+        "exp": false
+      },
+      {
+        "value": "C",
+        "exp": true
+      },
+      {
+        "value": "}",
+        "exp": false
+      }
+    ],
+    "while": [
+      {
+        "value": "while",
+        "exp": false
+      },
+      {
+        "value": "(",
+        "exp": false
+      },
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "W",
+        "exp": true
+      },
+      {
+        "value": "E",
+        "exp": true
+      },
+      {
+        "value": ")",
+        "exp": false
+      },
+      {
+        "value": "{",
+        "exp": false
+      },
+      {
+        "value": "C",
+        "exp": true
+      },
+      {
+        "value": "}",
+        "exp": false
+      }
+    ]
+  },
+  "E": {
+    "number": [
+      {
+        "value": "number",
+        "exp": false
+      }
+    ],
+    "id": [
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "E1",
+        "exp": true
+      }
+    ]
+  },
+  "E1": {
+    "(": [
+      {
+        "value": "F1",
+        "exp": true
+      }
+    ],
+    "op_mat": [
+      {
+        "value": "op_mat",
+        "exp": false
+      },
+      {
+        "value": "E",
+        "exp": true
+      }
+    ],
+    ";": [
+      {
+        "value": ";",
+        "exp": false
+      },
+      {
+        "value": "C1",
+        "exp": true
+      }
+    ]
+  },
+  "Z": {
+    "fn": [
+      {
+        "value": "fn",
+        "exp": false
+      },
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "(",
+        "exp": false
+      },
+      {
+        "value": "P",
+        "exp": true
+      },
+      {
+        "value": ")",
+        "exp": false
+      },
+      {
+        "value": "{",
+        "exp": false
+      },
+      {
+        "value": "C1",
+        "exp": true
+      },
+      {
+        "value": "}",
+        "exp": false
+      }
+    ]
+  },
+  "P": {
+    "type": [
+      {
+        "value": "type",
+        "exp": false
+      },
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "P1",
+        "exp": true
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "P1": {
+    "comma": [
+      {
+        "value": "comma",
+        "exp": false
+      },
+      {
+        "value": "P",
+        "exp": true
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "X": {
+    "id": [
+      {
+        "value": "X1",
+        "exp": true
+      }
+    ],
+    "number": [
+      {
+        "value": "X1",
+        "exp": true
+      }
+    ],
+    "string": [
+      {
+        "value": "X1",
+        "exp": true
+      }
+    ],
+    "null": [
+      {
+        "value": "X1",
+        "exp": true
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "X1": {
+    "id": [
+      {
+        "value": "id",
+        "exp": false
+      },
+      {
+        "value": "J",
+        "exp": true
+      }
+    ],
+    "number": [
+      {
+        "value": "number",
+        "exp": false
+      },
+      {
+        "value": "J",
+        "exp": true
+      }
+    ],
+    "string": [
+      {
+        "value": "X2",
+        "exp": true
+      },
+      {
+        "value": "J",
+        "exp": true
+      }
+    ],
+    "null": [
+      {
+        "value": "X2",
+        "exp": true
+      },
+      {
+        "value": "J",
+        "exp": true
+      }
+    ]
+  },
+  "J": {
+    "comma": [
+      {
+        "value": "comma",
+        "exp": false
+      },
+      {
+        "value": "X1",
+        "exp": true
+      }
+    ],
+    ")": [
+      {
+        "value": ")",
+        "exp": false
+      },
+      {
+        "value": ";",
+        "exp": false
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "X2": {
+    "id": [
+      {
+        "value": "E",
+        "exp": true
+      }
+    ],
+    "number": [
+      {
+        "value": "E",
+        "exp": true
+      }
+    ],
+    "string": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "null": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "O": {
+    "(": [
+      {
+        "value": "O",
+        "exp": true
+      },
+      {
+        "value": ")",
+        "exp": false
+      },
+      {
+        "value": "O1",
+        "exp": true
+      }
+    ],
+    "number": [
+      {
+        "value": "number",
+        "exp": false
+      },
+      {
+        "value": ";",
+        "exp": false
+      }
+    ],
+    "id": [
+      {
+        "value": "E",
+        "exp": true
+      }
+    ]
+  },
+  "O1": {
+    "number": [
+      {
+        "value": "number",
+        "exp": false
+      },
+      {
+        "value": "M",
+        "exp": true
+      },
+      {
+        "value": "0",
+        "exp": false
+      }
+    ],
+    "$": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "type": {
+    "int": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "float": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "string": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "boolean": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ],
+    "void": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "M": {
+    "op_mat": [
+      {
+        "value": "op_mat",
+        "exp": false
+      }
+    ]
+  },
+  "L": {
+    "op_Logico": [
+      {
+        "value": "ɛ",
+        "exp": false
+      }
+    ]
+  },
+  "W": {
+    "comparadores": [
+      {
+        "value": "comparadores",
+        "exp": false
+      }
+    ]
+  }
+}
